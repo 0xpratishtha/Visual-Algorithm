@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Algorithmic Visualization Hub</title>
+</head>
+
+<body aria-hidden="false" style="padding: 0px;"> 
+    <div id="__next">
+        <div class="">
+            <div class="" style="position:fixed;top:0;left:0;height:2px;background:transparent;z-index:99999999999;width:100%">
+                <div class="" style="height:100%;background:purple;transition:all 500ms ease;width:0%">
+                   <div style="box-shadow: purple 0px 0px 10px, purple 0px 0px 5px; width: 5%; opacity: 1; position: absolute; height: 100%; transition: all 500ms ease 0s; transform: rotate(3deg) translate(0px, -4px); left: -10rem;">
+                   </div>
+                </div>
+            </div>
+         <div id="imgpreview2" class="w-full z-10 sticky bg-white top-0 border-b border-grey-light shadow-md dark:bg-gray-800 dark:border-black">
+              <div class="w-full flex flex-wrap items-center lg:justify-between mt-0 py-4">
+                  <div class="px-0 lg:pl-4 flex items-center lg:mx-4 cursor-pointer text-purple-700 text-md md:text-xl font-bold mx-3 dark:text-purple-300">
+                    <span><b class="font-bold"></b>Algorithmic Visualization Hub</span>
+                  </div>
+                  <div class="navbar">
+                    <div class="menu-icon lg:hidden" id="menu-icon">
+                        
+                      <div class="text-purple-700 text-md font-semibold" style="margin-top:20px ;">Menu
+                        </div>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="text-purple-700 mt-1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path>
+                       </svg>
+                    </div>
+                    <ul class="menu-list lg:hidden" id="nav-content">
+                        <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+                                href="index.html" aria-label="Go to Home">Home</a></li>
+                        <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+                                href="sorting.html" id="sorting-link">Sorting Algorithms</a></li>
+                        <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+                                href="pathfinding.html" id="pathfinding-link">Pathfinding Algorithms</a> </li>
+                        <li class="mx-2 my-2 text-black hover:border-b-2 hover:border-purple-700 dark:text-white"><a
+                                href="searching.html" id="searching-link">Searching Algorithms</a></li>
+                    </ul>
+                </div>
+   <div class="w-full flex-grow lg:flex lg:flex-1 lg:content-center lg:justify-end lg:w-auto h-0 lg:h-auto overflow-hidden mt-2 lg:mt-0 z-20 transition-all" id="nav-content">
+    <ul class="flex items-center flex-col lg:flex-row">
+       <li class="mx-2 my-2"><a href="index.html" class="nav-link">Home</a></li>
+       <li class="mx-2 my-2"><a href="sorting.html" id="sorting-link" class="nav-link">Sorting Algorithms</a></li>
+       <li class="mx-2 my-2"><a href="pathfinding.html" id="pathfinding-link" class="nav-link">Pathfinding Algorithms</a></li>
+       <li class="mx-2 my-2"><a href="searching.html" id="searching-link" class="nav-link">Searching Algorithms</a></li>
+     </ul>
+   </div>
+    </div>
+    </div>
+  <hr class="dark:border-gray-500">
+<div class="dark:bg-gray-800">
+    <div class="Toastify"></div>
+    <div class="flex bg-white h-96 container mx-auto dark:bg-gray-900">
+        <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+            <div><br><br><br>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 md:text-gray-900 dark:text-white">Welcome to<br> <span class="text-purple-700 dark:text-purple-600">Algorithmic Visualization Hub</span></h2><br><br>
+                <h4 class="text-2xl md:text-3xl font-semibold text-gray-800 md:text-gray-900 dark:text-white">Learn <span class="text-purple-700 dark:text-purple-600">Algorithms:</span> <span id="algorithm-name" class="text-lg md:text-xl"></span></h4><br>
+                <p class="mt-4 md:mt-6 text-gray-700 md:text-gray-800 dark:text-gray-400" style="font-size: 1.125rem;font-family:'Roboto', sans-serif;">Explore the beauty of algorithms through interactive visualizations. Choose from a variety of algorithms and customize settings to see them in action.</p>
+
+            </div>
+        </div>
+        <div class="hidden lg:block lg:w-1/2" style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);">
+            <div class="h-full object-cover" style="background-image: url('https://media.licdn.com/dms/image/C5612AQFiNcLUjWtnBQ/article-cover_image-shrink_720_1280/0/1524581773012?e=2147483647&v=beta&t=Xb7ZWE5I7BFWUs2rcIop_NUfbvMSe7VEmHLfBZPx2Bg&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1352&amp;q=80'); background-size: contain;">
+                <div class="h-full bg-black opacity-25"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="why-us" class="why-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up">
+        <div class="box">
+          <span>01</span>
+          <h4>High quality visualizations</h4>
+          <p>
+            All visualizations have been coded by me, touching them up
+            until it's clear on first sight how an algorithm works.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4 mt-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+        <div class="box">
+          <span>02</span>
+          <h4>Completely free</h4>
+          <p>
+            I believe in free education. visual Algorithm hub is and will stay free -
+            forever. Also there's no need to create an account. All
+            features are available for everyone.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+    
+  <footer   class="text-gray-600 bg-white body-font dark:bg-gray-800 dark:text-white" style="margin-top: 320px;" >
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <div class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 dark:text-gray-200">
+        <div class="ml-3 text-xl">Algorithmic Visualization Hub</div>
+      </div>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 mt-4 md:mt-2 mb-2 md:mb-0 text-center dark:text-gray-400">
+        Algorithmic Visualization Hub.
+      </p>
+      
+      
+    </div>
+  </footer>   
+ <script src="script.js"></script>
+</body>
+</html>
